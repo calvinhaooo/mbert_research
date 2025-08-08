@@ -310,10 +310,10 @@ def main():
         # PSCL: load the splits for 10 fold cross validation --> https://huggingface.co/docs/datasets/splits.html
         # Note the data was already shuffled before and this shuffled data was saved to the json file. Loading the data like below ensures that the loaded data for a specific split is always the same. (When one wants to have different splits for cross validation, this can be changed by shuffling the data that is saved in the json file)
         test_splits = datasets.load_dataset(path="json",
-                                                data_files="./data_preprocessing/ner_medical_NER_ro_train.json",
+                                                data_files="dataset/ner_data.json",
                                                 split=[f'train[{k}%:{k + 10}%]' for k in range(0, 100, 10)])
         train_splits = datasets.load_dataset(path="json",
-                                                 data_files="./data_preprocessing/ner_medical_NER_ro_train.json",
+                                                 data_files="dataset/ner_data.json",
                                                  split=[f'train[:{k}%]+train[{k + 10}%:]' for k in range(0, 100, 10)])
         # select the data for the current fold
         test_data = test_splits[data_args.fold]
