@@ -46,9 +46,9 @@ Code
 │         │             │         └── cantemist-ner
 │         │             │             └── result
 │         │             ├── script
-│         │             │         ├── README.md
-│         │             │         ├── ner.sh
-│         │             │         └── run_ner.py
+│         │                    ├── README.md
+│         │                    ├── ner.sh
+│         │                    └── run_ner.py
 │         └── hiv_classification
 │             ├── evaluation_hiv_classification.ipynb
 │             ├── mbert
