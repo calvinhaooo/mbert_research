@@ -22,48 +22,40 @@ Code
 ```
 ├── README.md
 ├── fine_tune
-│   ├── NER
-│   │   ├── romanian
-│   │   │   ├── embedding_analysis.ipynb
-│   │   │   ├── entity_level_NER.ipynb
-│   │   │   ├── evaluate_NER.ipynb
-│   │   │   ├── mbert
-│   │   │   ├── mbert-nl-clin
-│   │   │   ├── mbert-nl-ro
-│   │   │   ├── mbert-ro-bio
-│   │   │   └── script
-│   │   │       ├── README.md
-│   │   │       ├── dataset
-│   │   │       │   └── ner_data.json
-│   │   │       ├── run_ft.py
-│   │   │       └── run_ner.py
-│   │   └── spanish
-│   │       ├── bsc_bio_ehr_es
-│   │       │   └── cantemist-ner
-│   │       │       └── result
-│   │       ├── embedding_analysis.ipynb
-│   │       ├── evaluate_NER.ipynb
-│   │       ├── evaluate_es_NER.ipynb
-│   │       ├── mbert
-│   │       │   └── cantemist-ner
-│   │       │       └── result
-│   │       ├── mbert-nl-clin
-│   │       │   └── cantemist-ner
-│   │       │       └── result
-│   │       ├── script
-│   │       │   ├── README.md
-│   │       │   ├── ner.sh
-│   │       │   └── run_ner.py
-│   └── hiv_classification
-│       ├── evaluation_hiv_classification.ipynb
-│       ├── lime_analysis.ipynb
-│       ├── mbert
-│       ├── mbert-nl-bio
-│       └── mbert-nl-clin
+│         ├── NER
+│         │         ├── romanian
+│         │         │         ├── evaluate_NER.ipynb
+│         │         │         ├── mbert
+│         │         │         ├── mbert-nl-clin
+│         │         │         ├── mbert-nl-ro
+│         │         │         ├── mbert-ro-bio
+│         │         │         └── script
+│         │         │             ├── README.md
+│         │         │             ├── dataset
+│         │         │             ├── run_ft.py
+│         │         │             └── run_ner.py
+│         │         └── spanish
+│         │             ├── bsc_bio_ehr_es
+│         │             │         └── cantemist-ner
+│         │             │             └── result
+│         │             ├── evaluate_NER.ipynb
+│         │             ├── mbert
+│         │             │         └── cantemist-ner
+│         │             │             └── result
+│         │             ├── mbert-nl-clin
+│         │             │         └── cantemist-ner
+│         │             │             └── result
+│         │             ├── script
+│         │             │         ├── README.md
+│         │             │         ├── ner.sh
+│         │             │         └── run_ner.py
+│         └── hiv_classification
+│             ├── evaluation_hiv_classification.ipynb
+│             ├── mbert
+│             ├── mbert-nl-bio
+│             └── mbert-nl-clin
 └── pretrain
     ├── pretrain_corpus
-    │   ├── bio_nl_corpus.txt
-    │   └── bio_ro_corpus.txt
     └── run_mlm.py
-
+        
 ```
