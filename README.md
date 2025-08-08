@@ -35,14 +35,14 @@ Code
 │         │    │             ├── run_ft.py
 │         │    │             └── run_ner.py
 │         │    └── spanish
-│         │              ├── bsc_bio_ehr_es
-│         │              │         └── cantemist-ner
-│         │              │             └── result
 │         │              ├── evaluate_NER.ipynb
 │         │              ├── mbert
 │         │              │         └── cantemist-ner
 │         │              │             └── result
 │         │              ├── mbert-nl-clin
+│         │              │         └── cantemist-ner
+│         │              │             └── result
+│         │              ├── bsc_bio_ehr_es
 │         │              │         └── cantemist-ner
 │         │              │             └── result
 │         │              └── script
