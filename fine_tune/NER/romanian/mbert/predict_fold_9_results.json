@@ -1,0 +1,10 @@
+{
+    "predict_accuracy": 0.9513633014001474,
+    "predict_f1": 0.7031963470319634,
+    "predict_loss": 0.20479312539100647,
+    "predict_precision": 0.6875,
+    "predict_recall": 0.719626168224299,
+    "predict_runtime": 0.075,
+    "predict_samples_per_second": 666.766,
+    "predict_steps_per_second": 93.347
+}
