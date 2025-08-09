@@ -1,6 +1,6 @@
 This is the code and result of Yinghao's project.
 
-In the pretraining folder, you can find the script for pretraning. 
+In the pretraining folder, you can find the script `run_mlm.py` for pretraning. 
 ```
 python run_mlm.py \
     --model_name_or_path=BASE_MODEL_NAME \
