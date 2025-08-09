@@ -49,11 +49,12 @@ Code
 │         │                    ├── README.md
 │         │                    ├── ner.sh
 │         │                    └── run_ner.py
-│         └── hiv_classification
-│             ├── evaluation_hiv_classification.ipynb
-│             ├── mbert
-│             ├── mbert-nl-bio
-│             └── mbert-nl-clin
+│         └── hiv_classification               
+│                   ├── evaluation_hiv_classification.ipynb
+│                   └── result                     
+│                        ├── mbert
+│                        ├── mbert-nl-bio
+│                        └── mbert-nl-clin
 └── pretrain
     ├── pretrain_corpus
     └── run_mlm.py
