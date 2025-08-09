@@ -6,3 +6,4 @@ The run_ner is the script for NER task.
 ```
 python run_ft.py
 ```
+

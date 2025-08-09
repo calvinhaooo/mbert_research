@@ -24,12 +24,12 @@ python run_mlm.py \
     --fp16
 ```
 
-In the fine-tune folder, the results are saved under each sub folder.
+In the fine-tune folder, the results are saved under each sub folder, which includes HIV classification and NER(Spanish, Romanian)
 
-In terms of NER, there are two folders: Romanian and Spanish. 
+In terms of NER, there are two folders: Romanian and Spanish. You can find the entity_level_NER.ipynb and result_reasoning.ipynb in `Romanian` folder. This provides the results of Romanian NER.
+In Spanish, you can find the entity level discussion in evaluate_es_NER.ipynb nad embedding_analysis.ipynb.
 
-
-Code 
+The structure of this project can be visualized as below:
 
 ```
 ├── README.md
@@ -37,6 +37,8 @@ Code
 │         ├── NER
 │         │    ├── romanian
 │         │    │         ├── evaluate_NER.ipynb
+│         │    │         ├── entity_level_NER.ipynb
+│         │    │         ├── result_reasoning.ipynb
 │         │    │         ├── mbert
 │         │    │         ├── mbert-nl-clin
 │         │    │         ├── mbert-nl-ro
@@ -48,14 +50,22 @@ Code
 │         │    │             └── run_ner.py
 │         │    └── spanish
 │         │              ├── evaluate_NER.ipynb
+│         │              ├── embedding_analysis.ipynb
+│         │              ├── evaluate_es_NER.ipynb
 │         │              ├── mbert
 │         │              │         └── cantemist-ner
+│         │              │             └── result
+│         │              │         └── pharmaconer
 │         │              │             └── result
 │         │              ├── mbert-nl-clin
 │         │              │         └── cantemist-ner
 │         │              │             └── result
+│         │              │         └── pharmaconer
+│         │              │             └── result
 │         │              ├── bsc_bio_ehr_es
 │         │              │         └── cantemist-ner
+│         │              │             └── result
+│         │              │         └── pharmaconer
 │         │              │             └── result
 │         │              └── script
 │         │                    ├── README.md
@@ -63,12 +73,12 @@ Code
 │         │                    └── run_ner.py
 │         └── hiv_classification               
 │                   ├── evaluation_hiv_classification.ipynb
+│                   ├── lime_analysis.ipynb
 │                   └── result                     
 │                        ├── mbert
 │                        ├── mbert-nl-bio
 │                        └── mbert-nl-clin
 └── pretrain
-    ├── pretrain_corpus
     └── run_mlm.py
         
 ```
