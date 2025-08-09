@@ -26,11 +26,12 @@ python run_mlm.py \
 
 In the fine-tune folder, the results are saved under each sub folder, which includes HIV classification and NER(Spanish, Romanian)
 
-In terms of NER, there are two folders: Romanian and Spanish. You can find the entity_level_NER.ipynb and result_reasoning.ipynb in `Romanian` folder. This provides the results of Romanian NER.
-In Spanish, you can find the entity level discussion in evaluate_es_NER.ipynb nad embedding_analysis.ipynb.
+In terms of NER, there are two folders: Romanian and Spanish. You can find the entity_level_NER.ipynb and result_reasoning.ipynb in `Romanian` folder. This provides the results of Romanian NER. The script is under this folder `fine_tune/NER/romanian/script/README.md`
+In Spanish, you can find the entity level discussion in evaluate_es_NER.ipynb nad embedding_analysis.ipynb. You can find the script for Spanish NER under this folder: `fine_tune/NER/spanish/script/README.md`
+
+
 
 The structure of this project can be visualized as below:
-
 ```
 ├── README.md
 ├── fine_tune
