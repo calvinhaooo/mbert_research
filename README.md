@@ -1,20 +1,32 @@
 This is the code and result of Yinghao's project.
 
-In the pretraining folder, you can find the script for pretraning.
+In the pretraining folder, you can find the script `run_mlm.py` for pretraning. 
+```
+python run_mlm.py \
+    --model_name_or_path=BASE_MODEL_NAME \
+    --output_dir=OUTPUT_DIR \
+    --do_train \
+    --do_eval \
+    --validation_split_percentage=VALIDATION_SPLIT \
+    --train_file=PATH_TO_CORPUS \
+    --per_device_train_batch_size=TRAIN_BATCH_SIZE \
+    --per_device_eval_batch_size=EVAL_BATCH_SIZE \
+    --gradient_accumulation_steps=GRAD_ACCUM_STEPS \
+    --learning_rate=LEARNING_RATE \
+    --num_train_epochs=EPOCHS \
+    --save_total_limit=MAX_CKPT \
+    --save_strategy=steps \
+    --save_steps=SAVE_INTERVAL \
+    --line_by_line \
+    --max_seq_length=MAX_SEQ_LEN \
+    --eval_strategy=steps \
+    --eval_steps=EVAL_INTERVAL \
+    --fp16
+```
 
 In the fine-tune folder, the results are saved under each sub folder.
 
-The HIV classification results are across three models. mbert, mbert-nl-bio and mbert-nl-clin.
-
-In terms of NER, there are two folders: Romanian and Spanish.
-
-Note: The results of Pharmaconer and the visualization of LIME, and embedding analysis are still in the platform. Need approval to be downloaded.
-
-Missing points(all finished but its in the mydre platform):
-
-1. The romanian experiment lacks of entity-level analysis and embedding analysis.
-2. The Spanish NER lacks of Pharmaconer updated results, with embedding analysis.
-3. The HIV classification lacks of the LIME analysis.
+In terms of NER, there are two folders: Romanian and Spanish. 
 
 
 Code 
