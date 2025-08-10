@@ -2,6 +2,7 @@ import subprocess
 
 num_folds = 10  # The number of folds
 # customize your model_path and output_base_dir
+# model_path: bert-base-multilingual-uncased, yinghaooo/mbert-ro-nl
 model_path = ""
 output_base_dir = ""
 train_file = "dataset/ner_data.json"
