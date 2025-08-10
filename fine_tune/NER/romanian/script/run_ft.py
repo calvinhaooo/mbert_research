@@ -1,8 +1,6 @@
 import subprocess
 
 num_folds = 10  # The number of folds
-
-
 # customize your model_path and output_base_dir
 model_path = ""
 output_base_dir = ""

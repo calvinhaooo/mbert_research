@@ -8,7 +8,7 @@ from scipy.special import softmax
 import torch
 from copy import deepcopy
 
-cls_args = ClassificationArgs(num_train_epochs=1,
+cls_args = ClassificationArgs(num_train_epochs=5,
                               save_model_every_epoch=False,
                               save_eval_checkpoints=False,
                               save_steps=-1,
@@ -46,13 +46,13 @@ for fold in range(10):
     
     model_args = deepcopy(cls_args)
 
-    model_args.output_dir = f"outputs/fixed_1/medroberta-erasmus/fold_{fold}/"
+    model_args.output_dir = f"model_name/fold_{fold}/"
     os.makedirs(model_args.output_dir, exist_ok = True)
 
     model = ClassificationModel(model_type='model_type', model_name='model_name', num_labels=2, use_cuda=True, args=model_args)
     train = pd.read_csv(f'dataset/cv_splits/fold_{fold}_train.csv')
     train = train.rename(columns={'flag': 'labels'})
-    val = pd.read_csv(f'dataset/cv_splits/fold_{fold}_val.csv')
+    val = pd.read_csv(f'dataset/cv_splits/fold_{fold}_eva.csv')
     val = val.rename(columns={'flag': 'labels'})
 
 
