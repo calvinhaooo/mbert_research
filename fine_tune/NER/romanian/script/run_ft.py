@@ -23,7 +23,8 @@ for fold in range(num_folds):
         "--per_device_train_batch_size", "16",
         "--gradient_accumulation_steps", "2",
         "--learning_rate", "2e-5",
-        "--text_column_name", "words"
+        "--text_column_name", "words",
+        "--return_entity_level_metrics", "True"
     ]
 
     print(f"Running fold {fold}...")
